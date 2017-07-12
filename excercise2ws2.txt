@@ -1,0 +1,28 @@
+INSERT INTO Entry (addressBookId,firstName,lastName,birthday,type,subtype,contentLineOne) VALUES ('1111','Matt','Szabo','1977-11-02','home','phone','Info about Matt'),(‘2222','Marcus','Szabo','2013-03-14','work','phone','Info about Marcus'),('3333','Christopher','Szabo','2015-04-03','home','address','Info about Christopher');
+
+
+mysql> SELECT * FROM Entry;
++----+---------------+-------------+----------+---------------------+------+---------+------------------------+----------------+------------------+-----------------+-----------------+
+| id | addressBookId | firstName   | lastName | birthday            | type | subtype | contentLineOne         | contentLineTwo | contentLineThree | contentLineFour | contentLineFive |
++----+---------------+-------------+----------+---------------------+------+---------+------------------------+----------------+------------------+-----------------+-----------------+
+|  1 |          1111 | Matt        | Szabo    | 1977-11-02 00:00:00 | home | phone   | Info about Matt        | NULL           | NULL             | NULL            | NULL            |
+|  2 |          2222 | Marcus      | Szabo    | 2013-03-14 00:00:00 | work | address | Info about Marcus      | NULL           | NULL             | NULL            | NULL            |
+|  3 |          3333 | Christopher | Szabo    | 2015-04-03 00:00:00 | work | address | Info about Christopher | NULL           | NULL             | NULL            | NULL            |
++----+---------------+-------------+----------+---------------------+------+---------+------------------------+----------------+------------------+-----------------+-----------------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT * FROM AddressBook;
++----+-----------+------+---------------------+------------+
+| id | accountId | name | createdOn           | modifiedOn |
++----+-----------+------+---------------------+------------+
+|  1 |       111 | Matt | 2017-07-12 00:31:17 | NULL       |
++----+-----------+------+---------------------+------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT * FROM Account;
++----+---------------+----------+---------------------+------------+
+| id | email         | password | createdOn           | modifiedOn |
++----+---------------+----------+---------------------+------------+
+|  1 | matt@matt.com | 123abc   | 2017-07-12 00:29:14 | NULL       |
++----+---------------+----------+---------------------+------------+
+1 row in set (0.00 sec)
