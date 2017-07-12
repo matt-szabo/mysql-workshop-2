@@ -1,0 +1,13 @@
+mysql> UPDATE Account SET password='1111' WHERE email = 'matt@matt.com';
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE Entry SET subtype ='email';                                                                                                         
+Query OK, 3 rows affected (0.00 sec)
+Rows matched: 3  Changed: 3  Warnings: 0
+
+mysql> UPDATE AddressBook SET name ='Matthias' WHERE AccountId = 111;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> 
