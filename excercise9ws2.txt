@@ -1,0 +1,24 @@
+mysql> SELECT COUNT(*) FROM Account WHERE id IS NOT NULL;
++----------+
+| COUNT(*) |
++----------+
+|     1000 |
++----------+
+1 row in set (0.01 sec)
+
+mysql> SELECT COUNT(*) FROM AddressBook WHERE id IS NOT NULL;                                                                                     
++----------+
+| COUNT(*) |
++----------+
+|     1100 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> SELECT COUNT(*) FROM Entry WHERE id IS NOT NULL;                                                                                          
++----------+
+| COUNT(*) |
++----------+
+|     4000 |
++----------+
+1 row in set (0.00 sec)
+
